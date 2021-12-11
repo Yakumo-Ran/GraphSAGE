@@ -59,4 +59,8 @@ def train():
         print('TestLoss = ', sum(loss_list) / len(test), ' TestAccuracy = ', sum(accu_list) / len(test))
 
 if __name__ == '__main__':
+    st = time.time()
     train()
+    ed = time.time()
+    timeUsed = st - ed
+    print('time used', timeUsed)
