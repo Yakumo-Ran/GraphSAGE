@@ -9,14 +9,14 @@ class config():
     def __init__(self):
         self._configs = {}
         self._configs['dims']         = 128
-        self._configs['lr']           = 0.01
-        self._configs['epochs']       = 8
+        self._configs['lr']           = 0.05
+        self._configs['epochs']       = 40
         self._configs['num_nodes']    = 2708
         self._configs['num_features'] = 1433
         self._configs['num_classes']  = 7
         self._configs['sample_num']   = 5
         self._configs['clf_ratio']    = 0.5
-        self._configs['batchsize']    = 400
+        self._configs['batchsize']    = 140
         self._configs['depth']        = 2 # 1 or 2
         self._configs['neg_num']      = 10 # negative sampling number for unsupervised training
         self._configs['act']          = tf.nn.relu
