@@ -63,4 +63,8 @@ def train():
 
 
 if __name__ == '__main__':
+    st = time.time()
     train()
+    ed = time.time()
+    timeUsed = ed - st
+    print('time used', timeUsed)
